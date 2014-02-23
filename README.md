@@ -1,11 +1,15 @@
+#Newton fractal drawer
 Javascript newton fractal drawer
 
-Features:
+##Features
  * Zooming and moving
  * Changeable roots for polynomials
  * Uses web workers
  * Plain javascrip, no libraries required
 
-Todo:
+##Todo
  * Better zooming (show pixelated preview from previous zoom level while generating new one)
+
+![Screenshot] (screenshot.png)
+
 
