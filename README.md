@@ -10,6 +10,7 @@ Javascript newton fractal drawer
 ##Todo
  * Better zooming (show pixelated preview from previous zoom level while generating new one)
 
+##Screenshots
 ![Screenshot] (screenshot.png)
 
 
