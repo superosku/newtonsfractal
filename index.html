@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jou</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="hoverboxes">
+			<div class="hoverbox">
+				<input type="button" value="Settings" onClick="toggleSettings()"/><br />
+				<div id="settings">
+					<table id="inputs"></table>
+					<input type="button" value="Add root" onClick="addRoot()" /><br />
+					<label for="iters">Iters</label>
+					<input type="number" id="iters" value="20" /><br />
+					<input type="button" value="Apply Changes" onClick="applyChanges()" />
+				</div>
+			</div>
+			<div class="hoverbox">
+				<table>
+					<tr>
+						<td>
+							<input type="button" value="-" class="movebutton" onClick="zoomOut()" />
+						</td>
+						<td>
+							<input type="button" value="^" class="movebutton" onClick="moveUp()" />
+						</td>
+						<td>
+							<input type="button" value="+" class="movebutton" onClick="zoomIn()" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="<" class="movebutton" onClick="moveLeft()" />
+						</td>
+						<td>
+							<img id="loader" src="ajax-loader.gif" alt="Loading.." /><br />
+						</td>
+						<td>
+							<input type="button" value=">" class="movebutton" onClick="moveRight()" />
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+				<input type="button" value="v" class="movebutton" onClick="moveDown()" />
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<canvas id="my-canvas" width="400" height="400">Jou, my canvas</canvas>
+		<script src="script.js"></script>
+	</body>
+</html>
+
